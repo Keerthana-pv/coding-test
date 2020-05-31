@@ -8,6 +8,7 @@ import { CustomMaterialModule } from "./material.module";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app.routing.module";
+import { HttpModule } from "@angular/http";
 @NgModule({
   imports: [
     BrowserModule,
@@ -16,7 +17,8 @@ import { AppRoutingModule } from "./app.routing.module";
     CustomMaterialModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
