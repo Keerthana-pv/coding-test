@@ -1,0 +1,13 @@
+
+<div fxLayout="row" fxLayoutAlign="space-between center">
+	<div>User Name</div>
+	<div>Gender</div>
+	<div>City</div>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-between center">
+	<div *ngFor="let data of userList">
+		<div class="capitalize">{{getFullName(data?.user?.name)}}</div>
+		<div class="capitalize">{{data?.user?.gender}}</div>
+		<div class="capitalize">{{data?.user?.location?.city}}</div>
+	</div>
+</div>
