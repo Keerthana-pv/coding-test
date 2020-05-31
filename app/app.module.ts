@@ -11,6 +11,7 @@ import { AppRoutingModule } from "./app.routing.module";
 import { HttpModule } from "@angular/http";
 import { LoginModule } from "./login/login.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HomeModule } from "./home/home.module";
 @NgModule({
   imports: [
     BrowserModule,
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     HttpModule,
     LoginModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HomeModule
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]

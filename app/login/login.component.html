@@ -1,4 +1,4 @@
-<div fxLayout="column" fxLayoutAlign="center center">
+<div fxLayout="row" fxLayoutAlign="center center" style="padding: 0 30%;">
 	<mat-card>
 		<mat-card-header>
 			<mat-card-title>Login</mat-card-title>
@@ -22,7 +22,7 @@
 					</tr>
 				</table>
 			</form>
-      <mat-error *ngIf = "!isValid">Invalid credentials</mat-error>
+			<mat-error *ngIf="!isValid">Invalid credentials</mat-error>
 			<mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
 		</mat-card-content>
 		<mat-card-actions>
@@ -30,4 +30,3 @@
 		</mat-card-actions>
 	</mat-card>
 </div>
-<router-outlet></router-outlet>

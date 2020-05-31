@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
       this.username == this.userData.username &&
       this.password == this.userData.password
     ) {
-      this.router.navigate(["./home"]);
+    
     } else {
       this.isValid = false;
       console.log("Invalid credentials");
