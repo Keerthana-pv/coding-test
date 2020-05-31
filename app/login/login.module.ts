@@ -5,12 +5,18 @@ import { LoginComponent } from './login.component';
 import { LoginRoutingModule } from './login-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './login.service';
+import { CustomMaterialModule } from '../material.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     CommonModule,
     LoginRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CustomMaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [LoginComponent],
   providers: [LoginService]
